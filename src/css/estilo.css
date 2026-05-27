@@ -1,12 +1,12 @@
 /* definindo as variaveis globais */
 
 :root{
-    --color-primary: blue;
-    --bg-dark: #141414;
-    --bg-carr: #555;
+    --color-primary: rgba(255, 9, 9, 0.658);
+    --bg-dark: #1357e9f3;
+    --bg-carr: #b33434;
     --text-color: #fff;
     --bg-rgba: rgba(0,0,0,0,8);
-    --btn-color: #09b1ff;
+    --btn-color: #c00d0d;
 }
 
 *{
@@ -58,5 +58,60 @@ nav ul li a:hover{
     color: var(--btn-color);
     text-decoration: underline;
     text-transform: uppercase; 
+}
+
+#container{
+    padding: 40px 15%;
+}
+
+.card{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top: 20px;
+}
+
+.card-game{
+    background:var(--bg-card);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 03s ease;
+    border: 2px solid var(--text-color);
+}
+
+.card-game:hover{
+    transform: translateY(-10px);
+    border: 5px solid;
+    border-color: yellow;
+}
+
+.card-game img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content h3{
+    font-size: 1.5rem;
+    color:var(--btn-color);
+    margin-bottom: 20px;    
+}
+
+.preco{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.btn-comprar{
+    background:var(--btn-color);
+    padding: 10px 20px;
+    boder-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+.btn-comprar:hover{
+    background:#b90505d3;
+    transform:scale(1.2);
 }
 
